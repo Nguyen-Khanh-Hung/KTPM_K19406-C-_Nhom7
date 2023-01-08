@@ -1,3 +1,3 @@
 module.exports = {
-    waitForElement: 30
-}
+  waitForElement: 25,
+};

@@ -1,17 +1,14 @@
-const { I } = inject()
-const settingPageFunction = require('../page/settingPage/index');
-const Myfunctions = require('../page/common/functions')
-const MyVariable = require('../page/common/variable')
+const { I } = inject();
+const settingPageFunction = require("../page/settingPage/index");
+const Myfunctions = require("../page/common/functions");
+const MyVariable = require("../page/common/variable");
 
-Given('I edit company to {string}', (fullname) => {
-    settingPageFunction.editCompany(fullname)
+Given("I add new Api Key", () => {
+  settingPageFunction.addNewApiKey(MyVariable.apiKey);
 });
-Given('I add new member {string}', (member) => {
-    settingPageFunction.addNewMember(member)
+Given("I edit Api Key", () => {
+  settingPageFunction.editApiKey(MyVariable.editNameApiKey);
 });
-Given('I delete member {string}', (member) => {
-    settingPageFunction.deleteMember(member)
-});
-Given('I delete company', () => {
-    settingPageFunction.deleteCompany(MyVariable.companyName)
+Given("I delete Api Key", () => {
+  settingPageFunction.deleteApiKey();
 });

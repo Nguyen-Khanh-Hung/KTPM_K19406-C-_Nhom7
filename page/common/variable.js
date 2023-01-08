@@ -2,8 +2,8 @@ const Myfunctions = require("./functions");
 module.exports = {
   email: "hungyeuai195@gmail.com",
   password: "Hungyeuai1@",
-  companyName: "NHOM 7" + Myfunctions.randomNumber(1, 100),
-  website: "https://" + "NHOM 7" + Myfunctions.randomString(3) + ".com.vn",
+  companyName: "NHOM7" + Myfunctions.randomNumber(1, 100),
+  website: "https://" + "NHOM7" + Myfunctions.randomString(3) + ".com.vn",
   apiKey:
     "API KEY" + Myfunctions.randomNumber(1, 100) + Myfunctions.randomString(3),
   editNameApiKey:
